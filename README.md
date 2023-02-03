@@ -1,5 +1,7 @@
 # Project Name : KITMYTRIP TRAVEL APP
 
+![Thumbnail](https://i.postimg.cc/XvmDsqhM/Cover.png)
+
 🚀 [Visit Now](https://kitmytrip.vercel.app/)
 
 ## 🖥️ FRONT-END TECHNOLOGY :
