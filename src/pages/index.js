@@ -38,7 +38,7 @@ export default function Home() {
                   <p className="font-medium text-lg leading-lh_32 text-text_3">
                     Whether you are a travel buff, an amateur travel content
                     creator or a professional <br /> travel influencer, you can
-                    use kitmytrip's powerful content technology platform to{" "}
+                    use kitmytrips powerful content technology platform to
                     <br /> tell incredible stories.
                   </p>
                 </div>
