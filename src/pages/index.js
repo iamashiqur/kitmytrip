@@ -1,9 +1,18 @@
-import Header from "@/components/header/header";
 import Head from "next/head";
 import Image from "next/image";
+import Header from "@/components/header/header";
+import Modal from "@/components/modal/Modal";
+import SectionHeading from "@/components/section-heading/section-heading";
+import LandingBtn from "@/components/landing-btn/landing-btn";
+import SectionContent from "@/components/section-content/section-content";
 import BannerImage from "assets/banner-img.png";
-import Link from "next/link";
 import BannerButterfly from "assets/banner-butterfly.png";
+import SectionImgOne from "assets/whykitmytrip1.png";
+import SectionImgTwo from "assets/whykitmytrip2.png";
+import SectionImgThree from "assets/whykitmytrip3.png";
+import SectionImgFour from "assets/whykitmytrip4.png";
+import SectionImgFive from "assets/whykitmytrip5.png";
+import SectionImgSix from "assets/whykitmytrip6.png";
 
 export default function Home() {
   return (
@@ -17,6 +26,8 @@ export default function Home() {
 
       <main>
         <Header />
+
+        {/* LANDING BANNER /-START */}
         <section className="landing-banner section-padding bg-text_7">
           <div className="container">
             <div className="flex flex-col md:flex-row items-center">
@@ -41,16 +52,14 @@ export default function Home() {
                     use kitmytrips powerful content technology platform to
                     <br /> tell incredible stories.
                   </p>
+                  <LandingBtn buttonName="Start for free" />
                 </div>
               </div>
               <div className="w-full md:w-1/2 p-4">
                 <div className="banner-img relative">
                   <Image src={BannerImage} className="" alt="banner-img" />
-                  <Link
-                    href={"#"}
-                    className="absolute top-1/2 left-2/4 -translate-y-2/4 -translate-x-2/4"
-                  >
-                    <div class="h-20 w-20 bg-red-600 rounded-full flex justify-center items-center animation-pulse">
+                  <Modal>
+                    <div className="h-20 w-20 bg-red-600 rounded-full flex justify-center items-center animation-pulse">
                       <svg
                         width="82"
                         height="82"
@@ -65,12 +74,177 @@ export default function Home() {
                         />
                       </svg>
                     </div>
-                  </Link>
+                  </Modal>
+                  {/* </Link> */}
                 </div>
               </div>
             </div>
           </div>
         </section>
+        {/* LANDING BANNER /-END */}
+
+        {/* WHY JOIN MY TRIP /-START */}
+        <section className="whyjoinkitmytrip section-padding">
+          <div className="container">
+            <SectionHeading
+              sectionTitle="Why join Kitmytrip"
+              sectionDescription="Whether you are a travel buff, an amateur travel content creator or a"
+              BrakSectionDescription="professional travel influencer, you can use kitmytrip."
+            />
+            <div className="flex flex-col md:flex-row mt-[100px] items-center">
+              <div className="w-full md:w-1/2">
+                <div className="secton-content">
+                  <SectionContent
+                    contentTitle="Purpose built travel"
+                    breakContentTitle="studio"
+                    contentDescription="No code platform. Lorem Ipsum is simply dummy text of the printing and"
+                    breakCotentDescriptionOne="typesetting industry. Lorem Ipsum has been the industry's standard dummy text"
+                    breakCotentDescriptionTwo="ever since there are many variations of passages"
+                  />
+                  <LandingBtn buttonName="Start for free" />
+                </div>
+              </div>
+              <div className="w-full md:w-1/2">
+                <div className="content-img">
+                  <Image src={SectionImgOne} alt="section-image" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* WHY JOIN MY TRIP /-END */}
+
+        {/* ANY CONTENT /-START */}
+        <section className="anycontent section-padding bg-text_7">
+          <div className="container">
+            <div className="flex flex-col md:flex-row items-center">
+              <div className="w-full md:w-1/2">
+                <div className="section-img">
+                  <Image src={SectionImgTwo} alt="section-img" />
+                </div>
+              </div>
+              <div className="w-full md:w-1/2">
+                <div className="section-content ml-28">
+                  <SectionContent
+                    contentTitle="Any content"
+                    contentDescription="Photos, videos, blogs. There are many variations of passages of Lorem Ipsum"
+                    breakCotentDescriptionOne="available, but the majority have suffered alteration."
+                  />
+                  <LandingBtn buttonName="Start for free" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* ANY CONTENT /-END */}
+
+        {/* SHAREING IS CAREING /-START */}
+        <section className="sharingiscareing section-padding">
+          <div className="container">
+            <div className="flex flex-col md:flex-row items-center">
+              <div className="w-full md:w-1/2">
+                <div className="section-content">
+                  <SectionContent
+                    contentTitle="Sharing is caring &"
+                    breakContentTitle="earning"
+                    contentDescription="Get paid when customers book your trip plans"
+                  />
+                  <LandingBtn buttonName="Start for free" />
+                </div>
+              </div>
+              <div className="w-full md:w-1/2">
+                <div className="section-img">
+                  <Image src={SectionImgThree} alt="section-img" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* SHAREING IS CAREING /-END */}
+
+        {/* MANAGE MULTIPLE /-START */}
+        <section className="managemultiple section-padding bg-text_7">
+          <div className="container">
+            <div className="flex flex-col md:flex-row items-center">
+              <div className="w-full md:w-1/2">
+                <div className="section-img">
+                  <Image src={SectionImgFour} alt="section-img" />
+                </div>
+              </div>
+              <div className="w-full md:w-1/2">
+                <div className="section-content ml-28">
+                  <SectionContent
+                    contentTitle="Manage multiple"
+                    breakContentTitle="accounts"
+                    contentDescription="Save time by managing multiple accounts from one kitmytrip account."
+                  />
+                  <LandingBtn buttonName="Start for free" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* MANAGE MULTIPLE /-END */}
+
+        {/* STATS AT READY /-START */}
+        <section className="statsatready section-padding">
+          <div className="container">
+            <div className="flex flex-col md:flex-row items-center">
+              <div className="w-full md:w-1/2">
+                <div className="section-content">
+                  <SectionContent
+                    contentTitle="Stats at-the-ready"
+                    contentDescription="Get insights anytime on your own"
+                  />
+                  <LandingBtn buttonName="Start for free" />
+                </div>
+              </div>
+              <div className="w-full md:w-1/2">
+                <div className="section-img">
+                  <Image src={SectionImgSix} alt="section-img" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* STATS AT READY /-END */}
+
+        {/* BRAND AS A TRAVALLER /-START */}
+        <section className="brandasatravaller section-padding bg-text_7">
+          <div className="container">
+            <div className="flex flex-col md:flex-row items-center">
+              <div className="w-full md:w-1/2">
+                <div className="section-img">
+                  <Image src={SectionImgFive} alt="section-img" />
+                </div>
+              </div>
+              <div className="w-full md:w-1/2">
+                <div className="section-content">
+                  <SectionContent
+                    contentTitle="Build your brand as a"
+                    breakContentTitle="traveller"
+                    contentDescription="Share travel trips, help and inspire others. Build your own community of followers"
+                    breakCotentDescriptionOne="and become a virtual travel expert/guide"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* BRAND AS A TRAVALLER /-END */}
+
+        {/* HOW DOES IT WORK /-START */}
+        <section className="howdoesitwork">
+          <div className="container">
+            <div className="flex flex-col md:flex-row items-center">
+              <div className="w-full md:w-1/2">
+                
+              </div>
+              <div className="w-full md:w-1/2"></div>
+            </div>
+          </div>
+        </section>
+        {/* HOW DOES IT WORK /-END */}
       </main>
     </>
   );

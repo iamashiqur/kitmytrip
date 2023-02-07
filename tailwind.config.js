@@ -32,6 +32,7 @@ module.exports = {
       fontSize: {
         fs_12: "12px",
         fs_66: "66px",
+        fs_56: "56px",
       },
 
       //Line height
@@ -39,6 +40,7 @@ module.exports = {
         lh_32: "32px",
         lh_60: "60px",
         lh_76: "76px",
+        lh_66: "66px"
       },
 
       colors: {
@@ -75,6 +77,8 @@ module.exports = {
         status_danger: "#FF4E3E",
         status_danger_shade: "#FFEDEC",
       },
+
+      //Border radius
       borderRadius: {
         radius_10: "10px",
       },
