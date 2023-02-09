@@ -13,6 +13,11 @@ import SectionImgThree from "assets/whykitmytrip3.png";
 import SectionImgFour from "assets/whykitmytrip4.png";
 import SectionImgFive from "assets/whykitmytrip5.png";
 import SectionImgSix from "assets/whykitmytrip6.png";
+import CardImage1 from "assets/1.png";
+import CardImage2 from "assets/2.png";
+import CardImage3 from "assets/3.png";
+import CardImage4 from "assets/4.png";
+import Card from "@/components/card/card";
 
 export default function Home() {
   return (
@@ -234,17 +239,73 @@ export default function Home() {
         {/* BRAND AS A TRAVALLER /-END */}
 
         {/* HOW DOES IT WORK /-START */}
-        <section className="howdoesitwork">
+        <section className="howdoesitwork bg-dark_2 section-padding">
           <div className="container">
-            <div className="flex flex-col md:flex-row items-center">
-              <div className="w-full md:w-1/2">
-                
+            <SectionHeading
+              sectionTitle="How does it work?"
+              fontFamily="font-inter"
+              textColor="text-white"
+            />
+
+            <div className="section-content">
+              <div className="grid grid-cols-4 gap-4">
+                <div className="col-span-1 sm:col-span-3 lg:col-span-1">
+                  <Card
+                    cardImageSrc={CardImage1}
+                    cardImgClassName="mb-4"
+                    cardTitle="Sign up to create your profile"
+                    cardTitleClassName="font-bold text-2xl text-white leading-lh_34 mb-4"
+                    cardText="Get immediate access to your dashboard when you create a free account. Create a standout profile to present yourself to travellers around the world."
+                    cardTextClassName="font-medium text-lg text-text_3 mb-4"
+                  />
+                </div>
+                <div className="col-span-1 sm:col-span-3 lg:col-span-1">
+                  <Card
+                    cardImageSrc={CardImage2}
+                    cardImgClassName="mb-4"
+                    cardTitle="Share your trip stories"
+                    cardTitleClassName="font-bold text-2xl text-white leading-lh_34 mb-4"
+                    cardText="Upload any type of travel content to create stunning trip stories. Our intuitive platform makes it easy to create and share any type of travel content from anywhere from start to finish!"
+                    cardTextClassName="font-medium text-lg text-text_3 mb-4"
+                  />
+                </div>
+                <div className="col-span-1 sm:col-span-3 lg:col-span-1">
+                  <Card
+                    cardImageSrc={CardImage3}
+                    cardImgClassName="mb-4"
+                    cardTitle="Get paid"
+                    cardTitleClassName="font-bold text-2xl text-white leading-lh_34 mb-4"
+                    cardText="Start earning credits every time a traveller books your trip story. All credits can be used for your own travel experience."
+                    cardTextClassName="font-medium text-lg text-text_3 mb-4"
+                  />
+                </div>
+                <div className="col-span-1 sm:col-span-3 lg:col-span-1">
+                  <Card
+                    cardImageSrc={CardImage4}
+                    cardImgClassName="mb-4"
+                    cardTitle="Plan and book your own travel"
+                    cardTitleClassName="font-bold text-2xl text-white leading-lh_34 mb-4"
+                    cardText="Discover trip stories from other insiders, meet and connect with like minded travellers. Add trips to your bucket list. Once you are done planning your perfect vacation, go ahead and book your trip in one click."
+                    cardTextClassName="font-medium text-lg text-text_3 mb-4"
+                  />
+                </div>
               </div>
-              <div className="w-full md:w-1/2"></div>
+            </div>
+            <div className="text-center pt-8">
+              <LandingBtn buttonName="Ready to start?" className="" />
             </div>
           </div>
         </section>
         {/* HOW DOES IT WORK /-END */}
+
+        {/* ALL THE FEATURES /-START */}
+        <section className="allthefeatures section-padding">
+          <div className="container">
+            <SectionHeading sectionTitle="All the features you need" />
+            
+          </div>
+        </section>
+        {/* ALL THE FEATURES /-END */}
       </main>
     </>
   );

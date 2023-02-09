@@ -26,6 +26,7 @@ module.exports = {
     extend: {
       fontFamily: {
         manrope: "'Manrope', sans-serif",
+        inter: "'Inter', sans-serif",
       },
 
       // Font size
@@ -38,9 +39,10 @@ module.exports = {
       //Line height
       lineHeight: {
         lh_32: "32px",
+        lh_34: "34px",
         lh_60: "60px",
+        lh_66: "66px",
         lh_76: "76px",
-        lh_66: "66px"
       },
 
       colors: {
